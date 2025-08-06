@@ -1,73 +1,73 @@
-# Welcome to your Lovable project
+# 🌿 Sanjeevani AI – About the Project
 
-## Project info
+## 💡 Inspiration
 
-**URL**: https://lovable.dev/projects/4391044e-02d9-410a-900b-6501c3c156ce
+Thalassemia patients require lifelong blood transfusions, regular medical attention, and emotional support. In India, many of these patients—especially children—suffer due to:
 
-## How can I edit this code?
+- Difficulty finding timely blood donors  
+- Lack of awareness about Thalassemia care  
+- Poor healthcare connectivity in remote areas  
 
-There are several ways of editing your application.
+Our inspiration came from the idea of **"Sanjeevani Booti"** — the mythological life-saving herb from the Indian epic *Ramayana*. We wanted to recreate that concept using modern tools — **AI and technology** — to bring hope and support to **real-life warriors battling Thalassemia**.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4391044e-02d9-410a-900b-6501c3c156ce) and start prompting.
+## 🔧 How We Built It
 
-Changes made via Lovable will be committed automatically to this repo.
+We created **Sanjeevani AI** as a full-stack, AI-powered mobile-first platform with the following major components:
 
-**Use your preferred IDE**
+### 🔹 AI Donor Prediction Engine
+We used time-series donation data and user behavior patterns to build a machine learning model that predicts donor availability:
+- Model: `XGBoost` and `Random Forest`
+- Input Features: Previous donation dates, location, health status, frequency
+- Output: Probability of availability within next 7/14 days
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+\\[
+P(\text{available}) = f(\text{donation\_history}, \text{location}, \text{blood\_group}, \text{health\_status})
+\\]
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 🔹 Real-Time Matching & Notifications
+- Firebase and GeoFire for live donor-patient matching
+- Google Maps API for routing
+- WhatsApp Cloud API for instant communication
 
-Follow these steps:
+### 🔹 AI Health Assistant
+We fine-tuned a lightweight transformer model for multilingual support to guide patients on:
+- Symptoms tracking
+- Medication reminders
+- Education about Thalassemia
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Vector search (FAISS) powers contextual memory for personalized chats.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 🔹 Unified Care Dashboard
+Built using **Flutter** and **React** for:
+- Patients to manage transfusions and care logs
+- Donors to track impact and rewards
+- Blood Warriors to monitor demand and analytics
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 📚 What We Learned
 
-**Edit a file directly in GitHub**
+- **AI works best when paired with human empathy** — designing a solution for sensitive medical use taught us the importance of ethical design and privacy.
+- Building **region-aware, multilingual systems** is critical for inclusivity.
+- Real-world healthcare solutions need strong **interoperability** with national systems like **e-RaktKosh**.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## ⚠️ Challenges We Faced
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- 🔐 Ensuring **data privacy** while handling sensitive health information
+- 📶 Making the platform **usable offline or in low-connectivity regions**
+- 🧠 Training AI on **limited medical data** while maintaining accuracy
+- 🌐 Integrating APIs from **government systems** with authentication barriers
+- 🌍 Designing for **diverse user needs** — patients, donors, doctors, NGOs
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 🌈 What Keeps Us Going
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The vision that **one click, one donor, or one reminder** from Sanjeevani AI could **save a life** — and that technology can truly become today’s *Sanjeevani Booti*.
 
-## How can I deploy this project?
+> _"Technology should not just be smart. It should be humane."_ 💚
 
-Simply open [Lovable](https://lovable.dev/projects/4391044e-02d9-410a-900b-6501c3c156ce) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
