@@ -1,4 +1,4 @@
-# 🌿 Sanjeevani AI – About the Project
+# 🌿 Sanjeevani AI – About the Project(backend coming soon)
 
 ## 💡 Inspiration
 
